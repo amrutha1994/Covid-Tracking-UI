@@ -1,0 +1,64 @@
+.userid {
+  background-color: white !important;
+  border-radius: 10px;
+}
+.match-container-grid {
+ 
+  display: flex;
+  justify-content: center;
+  /* margin-top: 3em; */
+  align-items: center;
+  flex-direction: column;
+}
+.user-container {
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.title{
+margin-bottom: 1em;
+}
+
+.header-wrap {
+  background-color: #124354 !important;
+}
+
+.go-btn {
+  background-color: #124354;
+  color: white;
+  font-family: "Roboto";
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.css-10botns-MuiInputBase-input-MuiFilledInput-input{
+
+  font-family: fantasy !important;
+  text-align: center !important;
+}
+.loc-btn{
+  background-color: #124354 !important;
+}
+.dashboard-container{
+  margin-top : 1em;
+    justify-content: center;
+}
+
+.txtfields{
+  background-color: white;
+  margin: 1em;
+  width: 14em;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+  input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input[type=date] {
+    -moz-appearance: textfield;
+  }
