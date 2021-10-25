@@ -33,13 +33,16 @@ const AddNewContact = (props) => {
         setLocation(value);
     };
     const addNewContact = () => {
-        const requestBody = {
-            contactName: contactName,
-            date: formatDate,
-            userId: localStorage.getItem('userId'),
-            ...(location && { location: location })
+        if(contactName && date){
+            const requestBody = {
+                contactName: contactName,
+                date: formatDate,
+                userId: localStorage.getItem('userId'),
+                ...(location && { location: location })
+            }
+            dispatch(addContact(requestBody,"add"))
         }
-        dispatch(addContact(requestBody,"add"))
+        
 
     }
     return (
@@ -51,6 +54,7 @@ const AddNewContact = (props) => {
                 label="Enter contact name"
                 type="text"
                 value={contactName}
+                required = {true}
             />
             <br />
             <TextField
@@ -61,6 +65,8 @@ const AddNewContact = (props) => {
                 type="date"
                 value={date}
                 InputLabelProps={{ shrink: true }} 
+                required = {true}
+
             />
 
             <br />
